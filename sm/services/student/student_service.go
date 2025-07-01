@@ -51,8 +51,8 @@ func updateStudent() {
 	for _, s := range studentList {
 		if s.GetId() == id {
 			fmt.Println("Nhap thong tin moi")
-			name := utils.GetOptionalEmptyString(fmt.Sprintf("- Nhap ten (%s): ", s.Name), s.Name)
-			class := utils.GetOptionalEmptyString(fmt.Sprintf("- Nhap lop (%s): ", s.Class), s.Class)
+			name := utils.GetOptionalString(fmt.Sprintf("- Nhap ten (%s): ", s.Name), s.Name)
+			class := utils.GetOptionalString(fmt.Sprintf("- Nhap lop (%s): ", s.Class), s.Class)
 
 			student := Student{
 				Id:    id,
