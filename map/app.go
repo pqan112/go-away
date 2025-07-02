@@ -27,6 +27,10 @@ func main() {
 	}
 
 	fmt.Println(employees["anime"].Role)
+	for k, v := range employees {
+		fmt.Println(k)
+		fmt.Println(v.Age)
+	}
 
 	scores := map[string][]int{
 		"math":    {90, 80, 85},
